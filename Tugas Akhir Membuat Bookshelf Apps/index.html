@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Bookshelf Apps</title>
+            <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="header">
+            <h1><img class="book" src="img/01.ico" alt="icon_buku">&nbsp;&nbsp;<span>Bookshelf Apps</span></h1>
+            <p>Kelola Library Buku Anda Dengan Mudah</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <section class="input_section content1" id="inputSection">
+                <h2>Tambahkan Buku Baru<hr></h2>
+                <form id="input-buku">
+                    <div class="input">
+                        <label for="inputJudulBuku">Judul</label>
+                        <input id="inputJudulBuku" type="text" placeholder="Masukkan judul buku"/>
+                    </div>
+                    <div class="input">
+                        <label for="inputPenulisBuku">Penulis</label>
+                        <input id="inputPenulisBuku" type="text" placeholder="Masukkan nama penulis buku"/>
+                    </div>
+                    <div class="input">
+                        <label for="inputTahunTerbit">Tahun</label>
+                        <input id="inputTahunTerbit" type="number" placeholder="Masukkan tahun terbit buku"/>
+                    </div>
+                    <div class="input-checkbox">
+                        <label for="SelesaiDibaca">Selesai dibaca</label>
+                        <input id="SelesaiDibaca" type="checkbox" />
+                    </div>
+                    <button id="input-submit" type="submit"><img class="add-icon" src="img/02.ico" alt="add-icon">&nbsp;&nbsp;
+                    <span>Tambahkan Buku</span></button>
+                </form>
+
+            </section>
+         
+            <section style="margin-top: 8rem;" class="search_section">
+                <h2>Cari Buku</h2>
+                <form>
+                        <label for="inputsearchBook">Judul</label>
+                        <input  id="inputsearchBook" type="text" placeholder="Masukkan Judul Buku">
+                        <button id="search" type="button" style="  background: linear-gradient(-45deg, rgba(43, 81, 112),#00c8eb);
+                        color: white;"><img class="search-icon" src="img/03.ico" alt="search-icon">&nbsp; 
+                        <span>Cari</span></button>
+                        <br> <p>Note: Kosongkan pencarian dan klik cari untuk menampilkan semua daftar buku.</p>
+                </form>
+            </section><br>
+
+            <section class="edit-section" style="margin-top: -46.5rem;" hidden>
+                <div class="edit-form">
+                    <button id="tutupForm">X</button>
+                    <form id="editBuku">
+                        <h3>Edit Buku</h3>
+                        <div class="input judul">
+                            <label for="ubahJudulBuku">Judul</label>
+                            <input id="ubahJudulBuku" type="text">
+                        </div>
+                        <div class="flex-row">
+                            <div class="input penulis">
+                                <label for="ubahPenulisBuku">Penulis</label>
+                                <input id="ubahPenulisBuku" type="text">
+                            </div>
+                            <div class="input tahun">
+                                <label for="ubahTahunTerbit">Tahun</label>
+                                <input id="ubahTahunTerbit" type="number">
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="input-checkbox">
+                                <label for="ubahYangDibaca">Selesai dibaca</label>
+                                <input id="ubahYangDibaca" type="checkbox">
+                            </div>
+                            <div class="button">
+                                <button id="editDataSubmit" type="button">Edit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+            <aside>
+                <section class="content2">
+                    <h2 class="onair">Belum Selesai Dibaca</h2>
+                    <div class="book-list" style="font-size: 23px;" id="BelumDibaca"></div>
+                </section>
+                <section class="content3">
+                    <h2 class="onair">Selesai Dibaca</h2>
+                    <div class="book-list" id="SudahDibaca"></div>
+                </section>
+            </aside>
+    </main>
+
+    <footer>
+        <center>
+            <div class="background-b" style="font-size: 30px; background-color: aqua;">&copy; 2022 | Created by Aldi Musneldi</div>
+        </center>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
